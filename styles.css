@@ -1,0 +1,420 @@
+body {
+    padding:0;
+    margin:0;
+    font-family: "Open Sans", sans-serif;
+    font-size:20px;
+}
+
+nav {
+    display:flex;
+    padding:0px 140px;
+    justify-content:space-between;
+    align-items:center;
+    background:#c32429;
+    height:10vh;
+}
+
+nav .logo {
+    padding:5px 0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+nav .logo img {
+    width: 70px;
+}
+
+nav ul {
+    list-style:none;
+    display:flex;
+    font-size:17px;
+}
+
+nav ul li {
+    margin:0 1px;
+}
+nav ul li a {
+    text-decoration:none;
+    color:white;
+    padding:10px 20px;
+}
+
+nav ul li a:hover {
+    color:black;
+    transition-duration: .4s;
+}
+
+.portada {
+    background-image:url(img/2.avif);
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:100%;
+    height:90vh;
+}
+
+.portada .filtro {
+    background-color:rgb(0, 0, 0, .5);
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    color:white;
+}
+
+.portada .filtro .texto_principal h1 {
+    font-size:40px;
+}
+
+.portada .filtro .texto_principal {
+    margin:0;
+    padding:0 140px;
+}
+
+.portada .filtro .texto_principal h3{
+    font-weight: 500;
+    font-size:20px;
+}
+
+.portada .filtro .texto_principal a {
+    text-decoration:none;
+    background-color:#c32429;
+    color:#ffffff;
+    padding:10px 15px;
+    display:inline-block;
+    transition-duration:.3s;
+    font-size:20px;
+}
+
+.portada .filtro .texto_principal a:hover {
+    background-color:#000000;
+    transition-duration:.3s;
+}
+
+main {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    text-align:center;
+}
+
+main h3 {
+    font-size:35px;
+}
+
+main p, main a {
+    font-size:18px;
+}
+
+main .nosotros {
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}   
+
+main .nosotros .contenedor {
+    width:45%;
+    margin:0 auto;
+}
+
+main .servicios {
+    width:100%;
+    height:100vh;
+    display:flex;   
+    justify-content:center;
+    align-items:center;
+}
+
+main .servicios .img_servicios {
+    min-width:90vh;
+    min-height:100vh;
+    background-image: url(img/4.jpg);
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+main .servicios .texto_principal {
+    width:100%;
+    margin:0px 80px;
+}
+
+main .servicios .texto_principal .lista_servicios {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-gap:30px;
+}
+
+main .servicios .texto_principal .lista_servicios .contenedor_servicio {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+main .servicios .texto_principal .lista_servicios .contenedor_servicio a{
+    text-decoration:none;
+    color:#000000;
+}
+
+main .servicios .texto_principal .lista_servicios .contenedor_servicio img {
+    border-radius:100%;
+    width:80px;
+    padding-bottom:4px;
+    cursor:pointer;
+}
+
+main .contenedor_formulario {
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background-image: url(img/pexels-triemli-28821635.jpg);
+    background-size:100%;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+main .contenedor_formulario .formulario {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+    padding:30px 200px;
+    height:75%;
+    backdrop-filter: blur(10px);
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+main .contenedor_formulario .formulario .contenido {
+    display:flex;
+    width:100%;
+    margin:0;
+}
+
+main .contenedor_formulario .formulario .contenido .contenido_info {
+    width:40%;
+    padding:0 50px;
+}
+
+main .contenedor_formulario .formulario .contenido .contenido_formulario {
+    width:60%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+main .contenedor_formulario .formulario .contenido .contenido_info ul li{
+    list-style:none;
+    text-align: left;
+    margin:15px 0;
+}
+
+form {
+    width:300px;
+
+}
+
+form p {
+    display:flex;
+    flex-direction: column;
+    text-align:left;
+    font-size:20px;
+}
+
+form p label {
+    margin-bottom:8px;
+}
+
+form p input, form p button, form p textarea {
+    width:50vh;
+    outline: 0;
+    border:none;
+    background-color:rgb(0, 0, 0, 0);
+    border-bottom: 1px solid #000000;
+    font-size:1em;
+    
+}
+
+form p textarea {
+    resize:none;
+}
+
+form p button {
+    background: #c32429;
+    color:#ffffff;
+    font-size:0.9em;
+    padding:5px 0;
+    cursor:pointer;
+    transition-duration: .4s;
+}
+
+form p button:hover {
+    background: #000000;
+}
+
+main .mapa {
+    width:100%;
+}
+
+main .mapa iframe {
+    width:100%;
+    height:70vh;
+    margin:0;
+}
+
+footer {
+    width:100%;
+    height:40px;
+    background-color: #c32429;
+    justify-content:center;
+    align-items:center;
+    color: #ffffff;
+    display:flex;
+    font-size:15px;
+}
+
+@media (max-width:1400px) {
+    .portada {
+        height:60vh;
+    }
+
+    main .servicios .img_servicios {
+        min-width:60vh;
+    }
+
+    main .servicios .texto_principal {
+        margin:0 20px;
+    }
+
+    main .contenedor_formulario .formulario {
+        width:50%;
+        height:auto;
+    }
+
+
+    main .contenedor_formulario .formulario .contenido .contenido_formulario {
+        width:100%;
+    }
+
+    main .contenedor_formulario .formulario .contenido .contenido_info {
+        padding:0;
+        text-align:center;
+    }
+
+    main .contenedor_formulario .formulario .contenido .contenido_formulario form {
+        width:100%;
+    }
+
+    main .mapa iframe {
+        height:40vh;
+    }
+}
+
+@media (max-width:1200px) {
+    nav {
+        height:8vh;
+    }
+
+    main h3 {
+        font-size:40px;
+    }
+
+    main p {
+        font-size:20px;
+    }
+
+    main .nosotros {
+        height:70vh;
+    }
+
+    main .servicios {
+        flex-direction: column; 
+        height:auto;
+    }
+
+    main .servicios .img_servicios {
+        min-width:100%;
+        min-height:40vh;
+        background-size:100%;
+    }
+
+    main .servicios .texto_principal .lista_servicios {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding:50px 0;
+    }
+
+    main .servicios .texto_principal .lista_servicios a {
+        font-size:18px;
+    }
+
+    main .contenedor_formulario {
+        background-size:auto 100%;
+    }
+}
+
+@media (max-width:992px) {                                                      
+    nav {
+        padding:0 70px;
+    }
+
+    nav ul {
+        display:none;
+    }
+
+    .portada .filtro .texto_principal {
+        text-align: center;
+        padding:0 70px;
+    }
+
+    header .portada {
+        height:50vh;
+    }
+
+    main .nosotros .contenedor {
+        width:80%;
+    }
+
+    main .contenedor_formulario {
+        height:1200px;
+    }
+
+    main .contenedor_formulario .formulario {
+        height:100vh;
+        width:600px;
+        padding:0;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+
+    main .contenedor_formulario .formulario .contenido {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    main .contenedor_formulario .formulario .contenido .contenido_formulario form p {
+        margin:0 80px;
+    }
+
+    main .contenedor_formulario .formulario .contenido .contenido_formulario form p input{
+        margin:0 auto;
+    }
+
+    main .contenedor_formulario .formulario .contenido {
+        flex-direction:column;
+    }
+
+}
+
+@media (max-width:576px) {
+    .portada {
+        background-size: auto 100%;
+    }
+}
